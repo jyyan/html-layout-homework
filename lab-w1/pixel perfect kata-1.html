@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+      .container {
+          margin: 0 auto;
+          width: 640px;
+      }
+
+      .content {
+          display: flex;
+          justify-content: space-between;
+      }
+
+      .news-item {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 24px;
+      }
+
+      .news-list {
+          margin: 0px;
+          padding: 0px;
+      }
+
+      .news-item p {
+          margin: 0px 20px;
+      }
+      .news-title {
+          font-size: 20px;
+          line-height: 1.2;
+      }
+      .news-desc {
+          font-size: 16px;
+          line-height: 1.5;
+      }
+      .copyright {
+          margin: 0px;
+          font-size: 16px;
+          line-height: 1.5;
+          text-align: center;
+          padding: calc((120px - 16px * 1.5)/2) 0;
+      }
+  </style>
+</head>
+<body>
+<!--.container>(.content>(.news-list>(div.news-item*2>(img.cover-image+div>p.news-title+p.news-desc)))+.right-ad>img)+p.copyright-->
+<!--.container>(.content>(.news-list>(.news-item*2>(img+div>p.title+p.desc)))+.aside>img)+p.copyright-->
+<!--.container>(.content>(ul.news-list>(li.news-item*2>(img+div>h2.title{lorem5}+p.desc{lorem15})))+.aside>img)+p.copyright{lorem5}-->
+
+<!--.container>(.content>(ul.news-list>(li.news-item*2>(img[src="http://via.placeholder.com/96"]+div>(p.news-title>lorem5)+p.news-desc>lorem15)))+.aside>img[src="http://via.placeholder.com/216"])+p.copyright>lorem5-->
+
+
+<div class="container">
+  <div class="content">
+    <ul class="news-list">
+      <li class="news-item"><img src="http://via.placeholder.com/96" alt="">
+        <div>
+          <p class="news-title">Lorem ipsum dolor sit amet.</p>
+          <p class="news-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem numquam officiis, saepe
+            sed tenetur vitae!</p>
+        </div>
+      </li>
+      <li class="news-item"><img src="http://via.placeholder.com/96" alt="">
+        <div>
+          <p class="news-title">Ad aperiam assumenda earum et?</p>
+          <p class="news-desc">Ad debitis deleniti enim exercitationem, laboriosam laudantium quasi, reiciendis rerum
+            tenetur totam ullam ut veniam.</p>
+        </div>
+      </li>
+    </ul>
+    <div class="aside"><img src="http://via.placeholder.com/216" alt=""></div>
+  </div>
+  <p class="copyright">Lorem ipsum dolor sit amet.</p>
+</div>
+
+</body>
+</html>
