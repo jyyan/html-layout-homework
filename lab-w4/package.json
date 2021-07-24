@@ -35,6 +35,6 @@
     "graceful-fs": "^4.2.4"
   },
   "scripts": {
-    "dev": "gulp watch"
+    "dev": "gulp"
   }
 }

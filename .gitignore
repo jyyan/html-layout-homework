@@ -319,7 +319,7 @@ typings/
 # DynamoDB Local files
 .dynamodb/
 
-dist/
+# dist/
 
 .idea
 Debug
