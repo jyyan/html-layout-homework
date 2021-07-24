@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% set page = {
+    id: 'index',
+    title: 'NEW Title'
+  }
+%}
+
+{% block left %}
+<h2>傳送門：寫在這邊的 HTML 會在 layout 中的 block left 顯示</h2>
+This is the left side!
+{% endblock %}
+
+{% block right %}
+<h2>傳送門：寫在這邊的 HTML 會在 layout 中的 block right 顯示</h2>
+This is the right side!
+{% endblock %}
+
+{% block content %}
+<h1>傳送門：寫在這邊的 HTML 會在 layout 中的 block content 顯示</h1>
+<div class="index">
+    index.html
+</div>
+{% endblock %}
