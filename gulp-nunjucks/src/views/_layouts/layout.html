@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	{# jinja 註解符號：放一個預設標題，並填寫引用此 layout.html 版型檔案中宣告的 page.title 變數 #}
+	<title> {{page.title}} - PROJECT_TITLE </title>
+	<link rel="stylesheet" href="./assets/style/all.css">
+</head>
+<body>
+
+{# jinja 註解符號：搜尋並引用 includes 中的 header.html #}
+{% include 'header.html' %}
+
+<main class="main">
+	<div class="left">
+		{% block left %}{% endblock %}
+	</div>
+	<div>
+		{% block content %}
+		This is default content.
+		{% endblock %}
+	</div>
+	<div class="right">
+		{% block right %}
+		This is default content.
+		{% endblock %}
+	</div>
+</main>
+
+{# jinja 搜尋並引用 includes 中的 footer.html #}
+{% include 'footer.html' %}
+
+<script src="./assets/js/vendors.js"></script>
+<script src="./assets/js/all.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% set page = {
+    id: 'page2',
+    title: 'PAGE 2'
+  }
+%}
+
+{% block left %}
+<h2>傳送門：寫在這邊的 HTML 會在 layout 中的 block left 顯示</h2>
+This is the left side!
+{% endblock %}
+
+{% block right %}
+<h2>放在資料夾路徑中的 PAGE1</h2>
+This is the right side!
+{% endblock %}
+
+{% block content %}
+<h1>傳送門：寫在這邊的 HTML 會在 layout 中的 block content 顯示</h1>
+<div class="index">
+  page1
+</div>
+{% endblock %}
