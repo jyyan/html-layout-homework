@@ -67,6 +67,7 @@ function buildScss() {
       outputStyle: 'compressed'
     }).on('error', sass.logError))
     .pipe($.postcss(plugins))
+    .pipe($.concat(env.style.concat))
     .pipe($.sourcemaps.write('.'))
     .pipe(gulp.dest(env.style.path))
     .pipe(

@@ -35,6 +35,7 @@ let env = {
       `${srcPath}/assets/style/**/*.scss`,
       `${srcPath}/assets/style/**/*.sass`,
     ],
+    concat: 'all.css',
     path: `${distPath}/assets/style`,
   },
   javascript: {
